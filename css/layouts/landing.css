@@ -49,6 +49,18 @@ p {
     color: #fff;
 }
 
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    height: 10em;
+}
+
+.content p {
+    text-align: justify;
+}
 /*
  * -- TABLET (AND UP) MEDIA QUERIES --
  * On tablets and other medium-sized devices, we want to customize some
