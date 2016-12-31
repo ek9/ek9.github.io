@@ -8,19 +8,9 @@
 
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
-  <!--<![endif]-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
 
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/layouts/landing-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/layouts/landing.css">
-  <!--<![endif]-->
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- fonts.google.com -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
@@ -43,122 +33,125 @@
   <div class="pure-u-3-24 pure-u-lg-1-4"></div>
 </div>
 
-<div class="pure-g content">
-  <div class="pure-u-4-24 pure-u-lg-6-24"></div>
-  <div class="pure-u-16-24 pure-u-lg-3-24">
-        <div class="pure-menu">
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item">
-                  <a href="/" class="pure-menu-link">index</a>
-                </li>
-                <!--<li class="pure-menu-item">
-                  <a href="#" class="pure-menu-link">services</a>
-                </li>-->
-                <li class="pure-menu-item pure-menu-selected">
-                  <a href="/web-developer-in-amsterdam.html" class="pure-menu-link">web developer</a>
-                </li>
-                <li class="pure-menu-item">
-                  <a href="/linux-admin-in-amsterdam.html"
-                     class="pure-menu-link">linux admin</a>
-                </li>
+<div class="pure-g content" id="layout">
+  <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-5-24"></div>
+  <div class="pure-u-16-24 pure-u-lg-4-24 pure-u-xl-3-24">
 
-                <li class="pure-menu-item">
-                  <a href="/contact.html" class="pure-menu-link">contact</a>
-                </li>
-            </ul>
-        </div>
-  </div>
-  <div class="pure-u-4-24 pure-u-lg-1-24"></div>
-  <div class="pure-u-4-24 pure-u-lg-1-24"></div>
-  <div class="pure-u-16-24 pure-u-lg-6-24">
-    <div class="l-box">
+    <!-- hamburger menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+      <!-- Hamburger icon -->
+      <span></span>
+    </a>
 
-      <h2>web developer</h2>
+    <div id="menu" class="pure-menu">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link">index</a>
+        </li>
+        <li class="pure-menu-item pure-menu-selected">
+          <a href="/web-developer-in-amsterdam.html" class="pure-menu-link">web developer</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="/linux-admin-in-amsterdam.html"
+             class="pure-menu-link">linux admin</a>
+        </li>
 
-      <p>
-      I develop websites ranging from simple <strong>company websites</strong> to
-      fully featured <strong>web applications</strong> or <strong><abbr
-         title="Content Management Systems">CMS</abbr></strong>.
-      </p>
-
-      <p>
-      I can also develop new functionality for existing websites or
-      <abbr title="Content Management Systems">CMS</abbr> which are based on
-      <strong>PHP</strong> programming language.
-      </p>
-
-      <h3>development & consulting services</h3>
-
-      <ul>
-        <li><strong>payment processing integration</strong> (<em>PayPal, iDeal,
-            Direct-Debit, Banklink</em>).</li>
-        <li><strong>data protection</strong> and <strong>security
-            audit</strong>.</li>
-        <li><strong>performance</strong> and <strong>scalability</strong> of web
-          applications.</li>
-        <li>migration from <strong>legacy codebase</strong> to modern web
-          development environment (<strong>version control</strong>,
-          <strong>automated testing</strong>, <strong>continuous integration &
-            delivery</strong>).</li>
-        <li><abbr title="Search Engine Optimization">SEO</abbr> services.</li>
+        <li class="pure-menu-item">
+          <a href="/contact.html" class="pure-menu-link">contact</a>
+        </li>
       </ul>
-
-      <p>
-      I write well-engineered code that conforms to latest web development
-      standards and follows modern development practices. I can help with both
-      young and mature projects and manage them within budget and schedule
-      constraints.
-      </p>
-
-      <h3>Web development technology stack</h3>
-
-      <ul>
-        <li><strong>PHP</strong> (<em>Symfony, Laravel, Silex</em>).</li>
-        <li><strong><abbr title="Behaviour Driven Development">BDD</abbr></strong>
-          / <strong><abbr title="Test Driven Development">TDD</abbr></strong> 
-          (<em>behat, phpspec, phpunit</em>).</li>
-        <li><strong>HTML5</strong>, <strong>CSS3</strong> (<em>Semantic HTML,
-            <abbr title="Block, Element, Modifier">BEM</abbr>,
-            <abbr title="Scalable and Modular Architecture for CSS">SMACCS</abbr>,
-            Webpack, bower, npm</em>)</li>
-        <li><strong>EmberJS, vue.js, node</strong> (<em>JavaScript</em>).</li>
-        <li><strong>RabbitMQ</strong>
-          (<em><abbr title="Advanced Message Queueing Protocol">AMQP</abbr></em>)</li>
-        <li><strong>Redis</strong> (<em>dictionary storage & cache</em>).</li>
-        <li><strong>PostgreSQL</strong>, <strong>MySQL</strong> (<em>database
-            storage</em>).</li>
-      </ul>
-
-      <p>
-      I enjoy learning new technologies and always try to use the best tool to
-      get the job done while following industry proven development and project
-      management methodologies (<em>Behaviour Driven Development, Lean,
-        Agile</em>). This allows me to focus on <strong>delivering value to my
-        clients</strong>.
-      </p>
-
-      <p>
-      I also provide <a href="/linux-admin-in-amsterdam.html">linux admin &
-        devops services</a>. Please do not hesitate to
-      <a href="/contact.html">contact me</a>.
-      </p>
-
     </div>
   </div>
+  <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
+  <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
+  <div id="main" class="pure-u-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
 
-  <div class="pure-u-4-24 pure-u-lg-6-24"></div>
+    <h2>web developer</h2>
+
+    <p>
+    I develop websites ranging from simple <strong>company websites</strong> to
+    fully featured <strong>web applications</strong> or <strong><abbr
+                 title="Content Management Systems">CMS</abbr></strong>.
+    </p>
+
+    <p>
+    I can also develop new functionality for existing websites or
+    <abbr title="Content Management Systems">CMS</abbr> which are based on
+    <strong>PHP</strong> programming language.
+    </p>
+
+    <h3>development & consulting services</h3>
+
+    <ul>
+      <li><strong>payment processing integration</strong> (<em>PayPal, iDeal,
+          Direct-Debit, Banklink</em>).</li>
+      <li><strong>data protection</strong> and <strong>security
+          audit</strong>.</li>
+      <li><strong>performance</strong> and <strong>scalability</strong> of web
+        applications.</li>
+      <li>migration from <strong>legacy codebase</strong> to modern web
+        development environment (<strong>version control</strong>,
+        <strong>automated testing</strong>, <strong>continuous integration &
+          delivery</strong>).</li>
+      <li><abbr title="Search Engine Optimization">SEO</abbr> services.</li>
+    </ul>
+
+    <p>
+    I write well-engineered code that conforms to latest web development
+    standards and follows modern development practices. I can help with both
+    young and mature projects and manage them within budget and schedule
+    constraints.
+    </p>
+
+    <h3>Web development technology stack</h3>
+
+    <ul>
+      <li><strong>PHP</strong> (<em>Symfony, Laravel, Silex</em>).</li>
+      <li><strong><abbr title="Behaviour Driven Development">BDD</abbr></strong>
+        / <strong><abbr title="Test Driven Development">TDD</abbr></strong> 
+        (<em>behat, phpspec, phpunit</em>).</li>
+      <li><strong>HTML5</strong>, <strong>CSS3</strong> (<em>Semantic HTML,
+          <abbr title="Block, Element, Modifier">BEM</abbr>,
+          <abbr title="Scalable and Modular Architecture for CSS">SMACCS</abbr>,
+          Webpack, bower, npm</em>)</li>
+      <li><strong>EmberJS, vue.js, node</strong> (<em>JavaScript</em>).</li>
+      <li><strong>RabbitMQ</strong>
+        (<em><abbr title="Advanced Message Queueing Protocol">AMQP</abbr></em>)</li>
+      <li><strong>Redis</strong> (<em>dictionary storage & cache</em>).</li>
+      <li><strong>PostgreSQL</strong>, <strong>MySQL</strong> (<em>database
+          storage</em>).</li>
+    </ul>
+
+    <p>
+    I enjoy learning new technologies and always try to use the best tool to
+    get the job done while following industry proven development and project
+    management methodologies (<em>Behaviour Driven Development, Lean,
+      Agile</em>). This allows me to focus on <strong>delivering value to my
+      clients</strong>.
+    </p>
+
+    <p>
+    I also provide <a href="/linux-admin-in-amsterdam.html">linux admin &
+      devops services</a>. Please do not hesitate to
+    <a href="/contact.html">contact me</a>.
+    </p>
+
+  </div>
+
+  <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-6-24"></div>
 </div>
 
-
 <div class="pure-g">
-  <div class="pure-u-5-24 pure-u-lg-7-24"></div>
-  <div class="pure-u-14-24 pure-u-lg-10-24">
+  <div class="pure-u-3-24 pure-u-lg-4-12 pure-u-xl-1-4"></div>
+  <div class="pure-u-18-24 pure-u-lg-4-12 pure-u-xl-1-2">
     <div class="footer l-box">
       <p>Copyright &copy; ek9, 2016. All rights reserved.</p>
     </div>
   </div>
-  <div class="pure-u-5-24 pure-u-lg-7-24"></div>
+  <div class="pure-u-3-24 pure-u-lg-4-12 pure-u-xl-1-4"></div>
 </div>
+
+<script src="js/scripts.js"></script>
 
 </body>
 </html>

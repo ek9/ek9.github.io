@@ -8,19 +8,9 @@
 
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
 
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-old-ie-min.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
-  <!--<![endif]-->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
 
-  <!--[if lte IE 8]>
-    <link rel="stylesheet" href="css/layouts/landing-old-ie.css">
-  <![endif]-->
-  <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="css/layouts/landing.css">
-  <!--<![endif]-->
+  <link rel="stylesheet" href="css/style.css">
 
   <!-- fonts.google.com -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Oswald" rel="stylesheet">
@@ -43,114 +33,117 @@
   <div class="pure-u-3-24 pure-u-lg-1-4"></div>
 </div>
 
-<div class="pure-g content">
-  <div class="pure-u-4-24 pure-u-lg-6-24"></div>
-  <div class="pure-u-16-24 pure-u-lg-3-24">
-        <div class="pure-menu">
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item">
-                  <a href="/" class="pure-menu-link">index</a>
-                </li>
-                <!--<li class="pure-menu-item">
-                  <a href="#" class="pure-menu-link">services</a>
-                </li>-->
-                <li class="pure-menu-item">
-                  <a href="/web-developer-in-amsterdam.html" class="pure-menu-link">web developer</a>
-                </li>
-                <li class="pure-menu-item pure-menu-selected">
-                  <a href="/linux-admin-in-amsterdam.html"
-                    class="pure-menu-link">linux admin</a>
-                </li>
+<div class="pure-g content" id="layout">
+  <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-5-24"></div>
+  <div class="pure-u-16-24 pure-u-lg-4-24 pure-u-xl-3-24">
 
-                <li class="pure-menu-item">
-                  <a href="/contact.html" class="pure-menu-link">contact</a>
-                </li>
-            </ul>
-        </div>
-  </div>
-  <div class="pure-u-4-24 pure-u-lg-1-24"></div>
-  <div class="pure-u-4-24 pure-u-lg-1-24"></div>
-  <div class="pure-u-16-24 pure-u-lg-6-24">
-    <div class="l-box">
+    <!-- hamburger menu toggle -->
+    <a href="#menu" id="menuLink" class="menu-link">
+      <!-- Hamburger icon -->
+      <span></span>
+    </a>
 
-      <h2>linux admin</h2>
+    <div id="menu" class="pure-menu">
+      <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+          <a href="/" class="pure-menu-link">index</a>
+        </li>
+        <li class="pure-menu-item">
+          <a href="/web-developer-in-amsterdam.html" class="pure-menu-link">web developer</a>
+        </li>
+        <li class="pure-menu-item pure-menu-selected">
+          <a href="/linux-admin-in-amsterdam.html"
+             class="pure-menu-link">linux admin</a>
+        </li>
 
-      <p>
-      I can manage your <strong>IT infrastructure</strong> powered by
-      <strong>Linux</strong> or <strong>BSD</strong> <strong>dedicated
-        servers</strong>, <strong><abbr title="Virtual Private Servers">VPS</abbr>
-      </strong> or <strong>containers</strong>. Your online business will be
-      <strong>secure</strong> and your web applications <strong>scalable</strong>!
-      </p>
-
-      <h3>linux admin & devops services</h3>
-
-      <ul>
-        <li><strong>security audit</strong> for your servers (<em>hardening,
-            <abbr title="Intrusion Detection System">IDS</abbr>, logging</em>).</li>
-        <li><strong>performance audit</strong> for your
-          <strong>services</strong> (<em>benchmarking, optimization, monitoring</em>).</li>
-        <li><strong>automation</strong> of server provisioning and configuration
-          (<em>orchestration, containerization</em>)</li>
-        <li><strong>cloud infrastructure</strong> setup for
-          <strong>microservices</strong> and <strong>online business</strong>
-          (<em><abbr title="Software as a Service">SAAS</abbr>,
-            <abbr title="Platform as a Service">PAAS</abbr>,
-            <abbr title="Infrastructure as a Service">IAAS</abbr></em>).</li>
-        <li>software development stack setup for <strong>continuous integration
-            & delivery</strong> (<em>version control; automated testing,
-            building & deployment</em>).</li>
+        <li class="pure-menu-item">
+          <a href="/contact.html" class="pure-menu-link">contact</a>
+        </li>
       </ul>
-
-      <p>
-      I can work together with your development team and provide
-      <strong><abbr title="Development Operations">DevOps</abbr></strong>
-      services, helping you automate deployment and management of
-      <strong>mission critical services & applications</strong>.
-      </p>
-
-      <h3>devops technology stack</h3>
-
-      <ul>
-        <li><strong>Alpine Linux, Debian, Arch Linux, OpenBSD or SmartOS</strong>
-          powered servers and virtual machines.</li>
-        <li><strong>SaltStack</strong> for provisioning and orchestration of
-          servers and virutal machines.</li>
-        <li><strong>git, gitlab, gitlab-ci</strong> for version control and
-          continuous integration.</li>
-        <li><strong>nginx, HAProxy</strong> for web services & high
-          availability.</li>
-      </ul>
-
-      <p>
-      I work with <strong>open-source technologies</strong> that are
-      <strong>trusted in the industry</strong> and follow
-      <strong>modern</strong> development practices. This directly leads to
-      higher quality software and services for my clients and their customers.
-      </p>
-
-      <p>
-      I also provide <a href="/web-developer-in-amsterdam.html">web
-        development services</a>. Please do not hesitate to
-      <a href="/contact.html">contact me</a>.
-      </p>
-
     </div>
   </div>
+  <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
+  <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
+  <div id="main" class="pure-u-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
 
-  <div class="pure-u-4-24 pure-u-lg-6-24"></div>
+    <h2>linux admin</h2>
+
+    <p>
+    I can manage your <strong>IT infrastructure</strong> powered by
+    <strong>Linux</strong> or <strong>BSD</strong> <strong>dedicated
+      servers</strong>, <strong><abbr title="Virtual Private Servers">VPS</abbr>
+    </strong> or <strong>containers</strong>. Your online business will be
+    <strong>secure</strong> and your web applications <strong>scalable</strong>!
+    </p>
+
+    <h3>linux admin & devops services</h3>
+
+    <ul>
+      <li><strong>security audit</strong> for your servers (<em>hardening,
+          <abbr title="Intrusion Detection System">IDS</abbr>, logging</em>).</li>
+      <li><strong>performance audit</strong> for your
+        <strong>services</strong> (<em>benchmarking, optimization, monitoring</em>).</li>
+      <li><strong>automation</strong> of server provisioning and configuration
+        (<em>orchestration, containerization</em>)</li>
+      <li><strong>cloud infrastructure</strong> setup for
+        <strong>microservices</strong> and <strong>online business</strong>
+        (<em><abbr title="Software as a Service">SAAS</abbr>,
+          <abbr title="Platform as a Service">PAAS</abbr>,
+          <abbr title="Infrastructure as a Service">IAAS</abbr></em>).</li>
+      <li>software development stack setup for <strong>continuous integration
+          & delivery</strong> (<em>version control; automated testing,
+          building & deployment</em>).</li>
+    </ul>
+
+    <p>
+    I can work together with your development team and provide
+    <strong><abbr title="Development Operations">DevOps</abbr></strong>
+    services, helping you automate deployment and management of
+    <strong>mission critical services & applications</strong>.
+    </p>
+
+    <h3>devops technology stack</h3>
+
+    <ul>
+      <li><strong>Alpine Linux, Debian, Arch Linux, OpenBSD or SmartOS</strong>
+        powered servers and virtual machines.</li>
+      <li><strong>SaltStack</strong> for provisioning and orchestration of
+        servers and virutal machines.</li>
+      <li><strong>git, gitlab, gitlab-ci</strong> for version control and
+        continuous integration.</li>
+      <li><strong>nginx, HAProxy</strong> for web services & high
+        availability.</li>
+    </ul>
+
+    <p>
+    I work with <strong>open-source technologies</strong> that are
+    <strong>trusted in the industry</strong> and follow
+    <strong>modern</strong> development practices. This directly leads to
+    higher quality software and services for my clients and their customers.
+    </p>
+
+    <p>
+    I also provide <a href="/web-developer-in-amsterdam.html">web
+      development services</a>. Please do not hesitate to
+    <a href="/contact.html">contact me</a>.
+    </p>
+
+  </div>
+
+  <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-6-24"></div>
 </div>
 
-
 <div class="pure-g">
-  <div class="pure-u-5-24 pure-u-lg-7-24"></div>
-  <div class="pure-u-14-24 pure-u-lg-10-24">
+  <div class="pure-u-3-24 pure-u-lg-4-12 pure-u-xl-1-4"></div>
+  <div class="pure-u-18-24 pure-u-lg-4-12 pure-u-xl-1-2">
     <div class="footer l-box">
       <p>Copyright &copy; ek9, 2016. All rights reserved.</p>
     </div>
   </div>
-  <div class="pure-u-5-24 pure-u-lg-7-24"></div>
+  <div class="pure-u-3-24 pure-u-lg-4-12 pure-u-xl-1-4"></div>
 </div>
+
+<script src="js/scripts.js"></script>
 
 </body>
 </html>
