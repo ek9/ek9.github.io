@@ -6,7 +6,7 @@
   <meta name="description" content="web developer & linux admin in Amsterdam">
   <title>web developer in Amsterdam - ek9</title>
 
-  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/pure-min.css" integrity="sha384-CCTZv2q9I9m3UOxRLaJneXrrqKwUNOzZ6NGEUMwHtShDJ+nCoiXJCAgi05KfkLGY" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.1/build/grids-responsive-min.css">
 
@@ -38,7 +38,7 @@
   <div class="pure-u-16-24 pure-u-lg-4-24 pure-u-xl-3-24">
 
     <!-- hamburger menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
+    <a href="#menu" id="hamburgerMenu">
       <!-- Hamburger icon -->
       <span></span>
     </a>
@@ -152,6 +152,17 @@
 </div>
 
 <script src="js/scripts.js"></script>
+<noscript>
+  <!-- always show menu if JavaScript is disabled -->
+  <style>
+    #menu {
+        display: block;
+    }
+    #hamburgerMenu {
+        display: none;
+    }
+  </style>
+</noscript>
 
 </body>
 </html>

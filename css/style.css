@@ -108,7 +108,7 @@ textarea {
 }
 
 /* hamburger menu */
-.menu-link {
+#hamburgerMenu {
     display: block; /* show this only on small screens */
     background: #000;
     background: rgba(0,0,0,0.7);
@@ -119,33 +119,33 @@ textarea {
     height: auto;
     padding: 2.1em 1.6em;
 }
-.menu-link:active,
-.menu-link:hover,
-.menu-link:focus {
+#hamburgerMenu:active,
+#hamburgerMenu:hover,
+#hamburgerMenu:focus {
     background: #000;
 }
 
-.menu-link span {
+#hamburgerMenu span {
     position: relative;
     display: block;
 }
 
-.menu-link span,
-.menu-link span:before,
-.menu-link span:after {
+#hamburgerMenu span,
+#hamburgerMenu span:before,
+#hamburgerMenu span:after {
     background-color: #fff;
     width: 100%;
     height: 0.2em;
 }
 
-.menu-link span:before,
-.menu-link span:after {
+#hamburgerMenu span:before,
+#hamburgerMenu span:after {
     position: absolute;
     margin-top: -0.6em;
     content: " ";
 }
 
-.menu-link span:after {
+#hamburgerMenu span:after {
     margin-top: 0.6em;
 }
 
@@ -160,7 +160,7 @@ textarea {
 h1,
 h2,
 .footer,
-.menu-link {
+#hamburgerMenu {
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -ms-transition: all 0.3s ease-out;
@@ -186,16 +186,6 @@ h2,
         padding: 1em;
     }
 
-    /* We can align the menu header to the left, but float the
-    menu items to the right. */
-    .home-menu {
-        text-align: left;
-    }
-
-    .home-menu ul {
-        float: right;
-    }
-
     /**
      * navigation & hamburger menu
      */
@@ -204,7 +194,7 @@ h2,
         display: block;
     }
 
-    .menu-link {
+    #hamburgerMenu {
         position: fixed;
         left: 150px;
         display: none;
@@ -213,9 +203,6 @@ h2,
     #layout.active {
         position: relative;
         left: 150px;
-    }
-    .menu-link {
-        display:none;
     }
 }
 

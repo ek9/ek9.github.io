@@ -8,9 +8,9 @@
  */
 (function (window, document) {
 
-    var menu     = document.getElementById('menu'),
-        menuLink = document.getElementById('menuLink'),
-        content  = document.getElementById('main');
+    var menu            = document.getElementById('menu'),
+        hamburgerMenu   = document.getElementById('hamburgerMenu'),
+        content         = document.getElementById('main');
 
     function toggleClass(element, className) {
         var classes = element.className.split(/\s+/),
@@ -36,10 +36,10 @@
 
         e.preventDefault();
         toggleClass(menu, active);
-        toggleClass(menuLink, active);
+        toggleClass(hamburgerMenu, active);
     }
 
-    menuLink.onclick = function (e) {
+    hamburgerMenu.onclick = function (e) {
         toggleAll(e);
     };
 
