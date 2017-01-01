@@ -1,6 +1,6 @@
 /**
  * ek9.co scripts.js
- * author: ek9 <dev@ek9.co> 2016
+ * author: ek9 <dev@ek9.co> 2016-2017
  */
 
 /**
