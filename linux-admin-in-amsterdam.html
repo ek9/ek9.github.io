@@ -35,7 +35,7 @@
 
 <div class="pure-g content" id="layout">
   <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-5-24"></div>
-  <div class="pure-u-16-24 pure-u-lg-4-24 pure-u-xl-3-24">
+  <nav class="pure-u-16-24 pure-u-lg-4-24 pure-u-xl-3-24">
 
     <!-- hamburger menu toggle -->
     <a href="#menu" id="hamburgerMenu">
@@ -43,7 +43,7 @@
       <span></span>
     </a>
 
-    <nav id="menu" class="pure-menu">
+    <div id="menu" class="pure-menu">
       <ul class="pure-menu-list">
         <li class="pure-menu-item">
           <a href="/" class="pure-menu-link">index</a>
@@ -60,13 +60,17 @@
           <a href="/contact.html" class="pure-menu-link">contact</a>
         </li>
       </ul>
-    </nav>
+    </div>
 
-  </div>
+  </nav>
+
+  <!-- spacing for mobile, tablet and desktop screens -->
   <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
   <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
-  <div id="main" class="pure-u-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
 
+  <main id="main" class="pure-u-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+
+  <section>
     <h2>linux admin</h2>
 
     <p>
@@ -76,7 +80,9 @@
     </strong> or <strong>containers</strong>. Your online business will be
     <strong>secure</strong> and your web applications <strong>scalable</strong>!
     </p>
+  </section>
 
+  <section>
     <h3>linux admin & devops services</h3>
 
     <ul>
@@ -102,7 +108,9 @@
     services, helping you automate deployment and management of
     <strong>mission critical services & applications</strong>.
     </p>
+  </section>
 
+  <section>
     <h3>devops technology stack</h3>
 
     <ul>
@@ -122,14 +130,17 @@
     <strong>modern</strong> development practices. This directly leads to
     higher quality software and services for my clients and their customers.
     </p>
+  </section>
 
+  <section>
     <p>
     I also provide <a href="/web-developer-in-amsterdam.html">web
       development services</a>. Please do not hesitate to
     <a href="/contact.html">contact me</a>.
     </p>
+  </section>
 
-  </div>
+  </main>
 
   <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-6-24"></div>
 </div>
@@ -148,11 +159,11 @@
 <noscript>
   <!-- always show menu if JavaScript is disabled -->
   <style>
-    #menu {
-        display: block;
-    }
+#menu {
+  display: block;
+}
     #hamburgerMenu {
-        display: none;
+      display: none;
     }
   </style>
 </noscript>

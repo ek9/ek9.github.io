@@ -35,7 +35,7 @@
 
 <div id="layout" class="pure-g content">
   <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-5-24"></div>
-  <div class="pure-u-16-24 pure-u-lg-4-24 pure-u-xl-3-24">
+  <nav class="pure-u-16-24 pure-u-lg-4-24 pure-u-xl-3-24">
 
     <!-- hamburger menu toggle -->
     <a href="#menu" id="hamburgerMenu">
@@ -43,7 +43,7 @@
       <span></span>
     </a>
 
-    <nav id="menu" class="pure-menu">
+    <div id="menu" class="pure-menu">
       <ul class="pure-menu-list">
         <li class="pure-menu-item pure-menu-selected">
           <a href="/" class="pure-menu-link">index</a>
@@ -60,13 +60,17 @@
           <a href="/contact.html" class="pure-menu-link">contact</a>
         </li>
       </ul>
-    </nav>
+    </div>
 
-  </div>
+  </nav>
+
+  <!-- spacing for mobile, tablet and desktop screens -->
   <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
   <div class="pure-u-4-24 pure-u-lg-1-24 pure-u-xl-1-24"></div>
-  <div id="main" class="pure-u-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
 
+  <main id="main" class="pure-u-16-24 pure-u-lg-10-24 pure-u-xl-8-24">
+
+  <section>
     <h2 id="intro">
       Hi! I am <a href="/web-developer-in-amsterdam.html">web developer</a><br>
       & <a href="/linux-admin-in-amsterdam.html">linux admin</a> in Amsterdam!
@@ -89,8 +93,8 @@
     <p>
     My focus is on <strong>delivering value</strong> to my clients.
     </p>
-
-  </div>
+  </section>
+  </main>
 
   <div class="pure-u-4-24 pure-u-lg-4-24 pure-u-xl-6-24"></div>
 </div>
@@ -109,11 +113,11 @@
 <noscript>
   <!-- always show menu if JavaScript is disabled -->
   <style>
-    #menu {
-        display: block;
-    }
+#menu {
+  display: block;
+}
     #hamburgerMenu {
-        display: none;
+      display: none;
     }
   </style>
 </noscript>
