@@ -63,6 +63,12 @@
         <li class="pure-menu-item pure-menu-selected">
           <a href="/contact.html" class="pure-menu-link">contact</a>
         </li>
+
+        <li class="pure-menu-item">
+          <a href="https://github.com/ek9" target="_blank"
+             class="pure-menu-link">portfolio</a>
+        </li>
+
       </ul>
     </div>
 
@@ -80,25 +86,49 @@
     For any inquiries, please use the contact form below.
     </p>
 
-    <form class="pure-form pure-form-stacked" method="post" action="#">
+    <form id="email_form" class="pure-form pure-form-stacked" action="https://postmail.invotes.com/send" method="post">
+
+
       <fieldset>
         <legend>send a message</legend>
 
-        <label for="email">email</label>
-        <input id="email" class="pure-input-1" type="email" placeholder="email" required>
+        <label for="email">your email</label>
+        <input id="email" class="pure-input-1" type="text" name="reply_to" placeholder="your email" />
 
-        <label for="name">name</label>
-        <input id="name" class="pure-input-1" type="text" placeholder="name" required>
+        <label for="subject">subject</label>
+        <input id="subject" class="pure-input-1" type="text" name="subject" placeholder="subject" required/>
 
         <label for="message">message</label>
-        <textarea id="message" class="pure-input-1 contact" placeholder="message" required></textarea>
+        <textarea id="message" class="pure-input-1 contact" name="text" placeholder="message" required></textarea>
+
+        <input type="hidden" name="access_token" value="ac8h7bn822j8nwu1clu04q9u" />
+
+        <!-- return urls can be fully qualified -OR-
+         start with / for root relative -OR-
+         start with . for url relative -->
+        <input type="hidden" name="success_url" value=".?message=Email+Successfully+Sent%21&isError=0" />
+        <input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+
       </fieldset>
 
-      <button type="submit" class="pure-button pure-input-1 pure-button-primary">
+      <button id="submit_form" type="submit" class="pure-button pure-input-1 pure-button-primary">
         <i class="fa fa-envelope-o"></i>
         send
       </button>
     </form>
+
+    <!-- optional, prevents the submit button from being pressed more than once -->
+    <script>
+      var submitButton = document.getElementById("submit_form");
+      var form = document.getElementById("email_form");
+      form.addEventListener("submit", function (e) {
+        setTimeout(function() {
+          submitButton.innerHTML = "Sending...";
+          submitButton.disabled = true;
+        }, 1);
+      });
+    </script>
+
   </section>
   </main>
 
